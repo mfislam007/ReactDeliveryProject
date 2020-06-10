@@ -3,6 +3,7 @@ import React from 'react';
 import DrawerButton from '../SideDrawer/DrawerButton';
 import './Toolbar.css';
 import timo1 from './timo1.png';
+import DropDownButton from '../MenuBackdrop/DropDownButton';
 
 const toolbar = (props) => (
   <header className='toolbar'>
@@ -15,18 +16,8 @@ const toolbar = (props) => (
       <div className='toolbar_nav_items'>
         <ul>
           <li>
-            <div className='container'>
-              <button type='button' class='addbar'>
-                +
-              </button>
-              <div className='dropdown'>
-                <ul>
-                  <li>Delivery portal</li>
-                  <li>Delivery portal</li>
-                  <li>Delivery portal</li>
-                  <li>Delivery portal</li>
-                </ul>
-              </div>
+            <div>
+              <DropDownButton click={props.addClickHandler} />
             </div>
           </li>
           <li>
