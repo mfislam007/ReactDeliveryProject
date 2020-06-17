@@ -10,20 +10,28 @@ const sideDrawer = (props) => (
   <nav className='side-drawer'>
     <ul>
       <li>
-        <img src={delivery1} alt='delivery1' class='logo' />
-        Delivery portals
+        <a href='/'>
+          <img src={delivery1} alt='delivery1' class='logo' />
+          Delivery portals
+        </a>
       </li>
       <li>
-        <img src={news1} alt='news1' class='logo' />
-        News
+        <a href='/'>
+          <img src={news1} alt='news1' class='logo' />
+          News
+        </a>
       </li>
       <li>
-        <img src={calender1} alt='calender1' class='logo' />
-        Calender
+        <a href='/'>
+          <img src={calender1} alt='calender1' class='logo' />
+          Calender
+        </a>
       </li>
       <li>
-        <img src={setting1} alt='setting1' class='logo' />
-        Setting
+        <a href='/'>
+          <img src={setting1} alt='setting1' class='logo' />
+          Setting
+        </a>
       </li>
     </ul>
   </nav>

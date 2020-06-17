@@ -4,7 +4,7 @@ import './DropDownButton.css';
 
 const dropDownButton = (props) => (
   <div>
-    <button class='addbar' onClick={props.click}>
+    <button class='addbar' onMouseOver={props.click}>
       +
     </button>
   </div>

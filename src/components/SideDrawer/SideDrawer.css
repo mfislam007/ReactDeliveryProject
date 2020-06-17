@@ -17,6 +17,12 @@
   font-size: 0.8rem;
 }
 
+.side-drawer li:hover,
+.side-drawer li:active {
+  cursor: pointer;
+  background-color: rgba(10, 142, 250, 0.14);
+}
+
 .side-drawer ul {
   height: 100%;
   list-style: none;
@@ -27,12 +33,12 @@
 .side-drawer a {
   color: black;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
-.sile-drawer a:hover,
+.side-drawer a:hover,
 .side-drawer a:active {
-  color: sienna;
+  color: rgba(10, 142, 250, 0.14);
 }
 
 .logo {

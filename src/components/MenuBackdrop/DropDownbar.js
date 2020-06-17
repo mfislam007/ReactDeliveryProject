@@ -5,8 +5,12 @@ import './DropDownbar.css';
 const dropDownbar = (props) => (
   <nav className='dropdown'>
     <ul>
-      <li>Join Delivery portal</li>
-      <li>Add Delivery portal</li>
+      <li>
+        <a href='/'>Join Delivery portal</a>
+      </li>
+      <li>
+        <a href='/'>Add Delivery portal</a>
+      </li>
     </ul>
   </nav>
 );
