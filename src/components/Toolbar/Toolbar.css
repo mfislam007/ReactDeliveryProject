@@ -16,6 +16,7 @@
 
 .toolbar__logo {
   margin-right: 20px;
+  padding: 1px 20px;
 }
 
 .toolbar__logo a {
@@ -74,8 +75,8 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  justify-content: space-between;
-  margin-top: 7px;
+  justify-content: center;
+  margin-top: 6px;
   background: none;
   margin-left: 20px;
 }
@@ -116,7 +117,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  justify-content: space-between;
+  justify-content: center;
   padding: 8px 10px;
   margin: 0;
   background: none;
@@ -153,5 +154,6 @@
 
   .toolbar__logo {
     margin-left: 0;
+    padding: 0;
   }
 }

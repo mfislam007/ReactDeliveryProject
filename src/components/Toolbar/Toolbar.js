@@ -71,12 +71,16 @@ const toolbar = (props) => (
       <div className='toolbar_navigation-items2'>
         <ul>
           <li>
-            <div className='logoimage'>
-              <img src={home} alt='notification1home' class='imagef' />
-            </div>
+            <a href='/'>
+              <div className='logoimage'>
+                <img src={home} alt='home' class='imagef' />
+              </div>
+            </a>
           </li>
           <li>
-            <img src={timo1} alt='timo1' class='imagea' />
+            <a href='/'>
+              <img src={timo1} alt='timo1' class='imagea' />
+            </a>
           </li>
         </ul>
       </div>
