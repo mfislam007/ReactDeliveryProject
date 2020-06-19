@@ -8,18 +8,18 @@ import MenuBackdrop from './components/MenuBackdrop/MenuBackdrop';
 
 class App extends Component {
   state = {
-    sideOpen: false,
+    sideDrawerOpen: false,
     topOpen: false,
   };
 
-  drawerButtonClickHandler = () => {
+  drawerToggleClickHandler = () => {
     this.setState((prevState) => {
-      return { sideOpen: !prevState.sideOpen };
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
 
   backdropClickHandler = () => {
-    this.setState({ sideOpen: false });
+    this.setState({ sideDrawerOpen: false });
   };
 
   addDrawerButtonClickHandler = () => {
@@ -33,13 +33,11 @@ class App extends Component {
   };
 
   render() {
-    let sideDrawer;
     let backdrop;
     let dropDownbar;
     let menuBackdrop;
 
-    if (this.state.sideOpen) {
-      sideDrawer = <SideDrawer />;
+    if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
 
@@ -49,21 +47,19 @@ class App extends Component {
     }
 
     return (
-      <div>
+      <div style={{ height: '100%' }}>
         <Toolbar
-          drawerClickHandler={this.drawerButtonClickHandler}
+          drawerClickHandler={this.drawerToggleClickHandler}
           addClickHandler={this.addDrawerButtonClickHandler}
         />
+        <SideDrawer show={this.state.sideDrawerOpen} />
 
-        {sideDrawer}
         {backdrop}
         {dropDownbar}
         {menuBackdrop}
-
         <main style={{ marginTop: '64px' }}>
-          <p>This is the page content</p>
+          <p>This is the page content!</p>
         </main>
-        <div></div>
       </div>
     );
   }
